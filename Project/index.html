@@ -4,10 +4,18 @@
   <head>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
     <script src="script.js"></script>
+    <title>nose</title>
   </head>
 
-  <body ng-controller="PruebaController">
-    <h1>{{mensaje}}</h1>
+  <body ng-controller="AlumnosController">
+    <h1>Cuaderno Alumnos</h1>
+
+    <div>
+    	<div ng-repeat="alumno in alumnos">
+    		<div>{{alumno.nombre}}-{{alumno.curso}}</div>
+    		<span>{{alumno.telefono}}</span>
+    	</div>
+    </div>
   </body>
 
 </html>
